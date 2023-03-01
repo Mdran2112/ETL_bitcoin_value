@@ -1,0 +1,5 @@
+apache-airflow==2.5.0
+numpy
+pandas
+yfinance==0.2.12
+apache-airflow-providers-postgres
