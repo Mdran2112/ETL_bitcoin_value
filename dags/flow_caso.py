@@ -34,7 +34,7 @@ def transform(ti):
 with DAG(
         DAG_ID,
         start_date=datetime(2021, 1, 1),
-        schedule=None,#"@daily", # timedelta(seconds=5),
+        schedule="@daily", # timedelta(seconds=5),
         default_args={"retries": None},
         catchup=False,
         max_active_runs=1

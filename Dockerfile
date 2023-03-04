@@ -1,4 +1,3 @@
-#FROM quay.io/astronomer/astro-runtime:7.3.0
 FROM apache/airflow:2.5.0
 
 USER root
