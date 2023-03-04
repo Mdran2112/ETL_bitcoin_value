@@ -29,13 +29,13 @@ Enter to airflow server through port 8080 (by default).
 #### Connecting to Database
 
 In the Airflow web server, go to Admin -> Connections -> click to `+` button to add a new connection.
-In Connection Type, select `Postgres`. In Connection Id introduce `postgres_localhost`.
-The complete the rest of the fields (host, schema, login, password, port).
+In **Connection Type**, select `Postgres`. In **Connection Id** introduce `postgres_localhost`.
+Then complete the rest of the fields (**host**, **schema**, **login**, **password**, **port**).
 
 The data will be stored in the table `btc_value` (will be created automatically during the Load task, if it doesn't exist.)
 
-Note: If you want to use the same Postgres service that is used by Airflow server, you have to complete
-the fields schema, login and password with the values `POSTGRES_DB`, `POSTGRES_USER` and `POSTGRES_PASSWORD` 
+Note: If you want to use the same Postgres service that is used by Airflow server, you have to fill
+the fields **schema**, **login** and **password** with the values `POSTGRES_DB`, `POSTGRES_USER` and `POSTGRES_PASSWORD` 
 defined in the `.env` file.
 
 
