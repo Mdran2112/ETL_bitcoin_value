@@ -12,5 +12,4 @@ TICKERS = [
     "INTC"  # Intel
 ]
 
-
 def today(): return date.today().strftime("%Y-%m-%d") # datetime.now().strftime("%Y-%m-%d %H:%M:%S")

@@ -59,7 +59,7 @@ class PostgresInsertFromDataFrameOperator(BaseOperator):
 
     @staticmethod
     def _conflict_with_data(df_rows: DataFrame) -> bool:
-        if df_rows.shape[0] != 1:
+        if df_rows.shape[0] != 1 or df_rows.dropna().shape[0] != 1:
             logging.warning("There is a conflict in actualization of data. "
                             "It may not have been traded on NASDAQ that day. "
                             "No data will be inserted in database today.")
